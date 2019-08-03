@@ -1,0 +1,28 @@
+.row-content{
+    
+    margin:1% 1% 1% 1%;
+}
+footer{
+    background-color:Highlight;
+}
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color:magenta;
+    color: floralwhite;
+}
+
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+nav{
+    background:rebeccapurple;
+}
