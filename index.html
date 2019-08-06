@@ -6,11 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/index.css">
+      <!-- build:css css/main.css -->
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+      <link href="css/index.css" rel="stylesheet">
+      <!-- endbuild -->
   
 </head>
 <body>
@@ -236,7 +237,7 @@
     <footer>
         <div class="container">
             <div class="row row-container">
-                <div class="col-sm-3 class=" justified-content-center"">
+                <div class="col-sm-3">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
@@ -274,37 +275,13 @@
             </div>
         </div>
     </footer>
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $("#carouselButton").click(function () {
-            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                $("#mycarousel").carousel('pause');
-                $("#carouselButton").children("span").removeClass('fa-pause');
-                $("#carouselButton").children("span").addClass('fa-play');
-            }
-            else if ($("#carouselButton").children("span").hasClass('fa-play')) {
-                $("#mycarousel").carousel('cycle');
-                $("#carouselButton").children("span").removeClass('fa-play');
-                $("#carouselButton").children("span").addClass('fa-pause');
-            }
-        });
-
-        
-            $(document).ready(function(){
-                $("#loginhref").click(function () {
-                    $("#loginModal").modal();
-                });
-        });
-
-        $(document).ready(function () {
-            $("#reserveTablebtn").click(function () {
-                $("#reserveModal").modal();
-            });
-        });
-
-    </script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+    
 </body>
 
 </html>
